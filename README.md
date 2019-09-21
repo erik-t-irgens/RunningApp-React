@@ -32,29 +32,29 @@ The AUTHENTICATION branch is the gateway to the rest of the app:
 
 Beneath the gateway AUTHENTICATED component ("/app" route), we have the following main components: 
 
-    1. Header - This is here because it will  now be rendered on every view that an authenticated user can see, not in Register or Login. This will include things such as navigation buttons, a button to view a Drawer component (which will show the user buttons for settings, and the like), and will generally be used for navigation and understanding of view for the user.
+ #### Header - This is here because it will  now be rendered on every view that an authenticated user can see, not in Register or Login. This will include things such as navigation buttons, a button to view a Drawer component (which will show the user buttons for settings, and the like), and will generally be used for navigation and understanding of view for the user.
     
-    ![HEADER UNDER APP](https://user-images.githubusercontent.com/49962295/65380179-b9a97980-dc8a-11e9-9dae-012d9eb5b8e0.PNG)
+![HEADER UNDER APP](https://user-images.githubusercontent.com/49962295/65380179-b9a97980-dc8a-11e9-9dae-012d9eb5b8e0.PNG)
     
-    2. Home - The "home" page, or the thing that is first rendered (with an "/app/home" route) will display a list of recommended items - from matching users, to nearby tracks, and nearby events as well. These are small "Galleries" that will present information of each of these in a consistent style.
+#### Home - The "home" page, or the thing that is first rendered (with an "/app/home" route) will display a list of recommended items - from matching users, to nearby tracks, and nearby events as well. These are small "Galleries" that will present information of each of these in a consistent style.
     
-    ![HOME UNDER APP](https://user-images.githubusercontent.com/49962295/65380183-f2e1e980-dc8a-11e9-9017-71eb7e62f5e4.PNG)
+![HOME UNDER APP](https://user-images.githubusercontent.com/49962295/65380183-f2e1e980-dc8a-11e9-9017-71eb7e62f5e4.PNG)
     
-    The drawer will give access to Settings ("/app/user/settings") which will allow the current user to edit their profile information. This uses several components that will be rendered with buttons, input fields, and the like.
+The drawer will give access to Settings ("/app/user/settings") which will allow the current user to edit their profile information. This uses several components that will be rendered with buttons, input fields, and the like.
     
-    ![SETTINGS UNDER APP](https://user-images.githubusercontent.com/49962295/65380194-12791200-dc8b-11e9-894d-d5b8e9f07ac9.PNG)
+![SETTINGS UNDER APP](https://user-images.githubusercontent.com/49962295/65380194-12791200-dc8b-11e9-894d-d5b8e9f07ac9.PNG)
     
-    3. User - This route ("/app/user") will present a list of users (with the Gallery) given a certain search criteria. Each user will be inside a Card, which is presented in the Gallery. The summary refers to a minified version of the data from a User's profile for the purposes of display only (perhaps just a profile picture, and their name and gender).
+#### User - This route ("/app/user") will present a list of users (with the Gallery) given a certain search criteria. Each user will be inside a Card, which is presented in the Gallery. The summary refers to a minified version of the data from a User's profile for the purposes of display only (perhaps just a profile picture, and their name and gender).
     
-    ![USERS UNDER APP](https://user-images.githubusercontent.com/49962295/65380209-418f8380-dc8b-11e9-9252-84fc347ce1f4.PNG)
+![USERS UNDER APP](https://user-images.githubusercontent.com/49962295/65380209-418f8380-dc8b-11e9-9252-84fc347ce1f4.PNG)
     
-    4. Track - The way that these are displayed are identical to the User component above, with the exception now that there is a CREATE component for the creation of a new track by a user. 
+#### Track - The way that these are displayed are identical to the User component above, with the exception now that there is a CREATE component for the creation of a new track by a user. 
     
-    ![TRACK UNDER APP](https://user-images.githubusercontent.com/49962295/65380232-a3e88400-dc8b-11e9-9265-fc0bb47b00f5.PNG)
+![TRACK UNDER APP](https://user-images.githubusercontent.com/49962295/65380232-a3e88400-dc8b-11e9-9265-fc0bb47b00f5.PNG)
 
-    5. Event - This is identical to the Track component above, except that Events can be made with Tracks within them (such as creating a new event that takes place in a specific pre-made track.)
+#### Event - This is identical to the Track component above, except that Events can be made with Tracks within them (such as creating a new event that takes place in a specific pre-made track.)
     
-    ![EVENT UNDER APP](https://user-images.githubusercontent.com/49962295/65380246-c8dcf700-dc8b-11e9-84d3-8574acb9f7be.PNG)
+![EVENT UNDER APP](https://user-images.githubusercontent.com/49962295/65380246-c8dcf700-dc8b-11e9-84d3-8574acb9f7be.PNG)
 
 ### Component list and definitions
 
