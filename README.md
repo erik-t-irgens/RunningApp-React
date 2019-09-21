@@ -1,4 +1,42 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Running App (Name in Progress)
+
+#### _An application intended to allow users to pair with other users, create events, and create tracks with the intention of running in pairs. - September 21, 2019_
+
+#### _By **Erik Irgens**_
+
+## Description
+
+This application is designed to accomplish the following, in short: 
+1. Allow users to who feel unsafe to run alone to find like-minded/paced/gendered pairs
+2. Find running routes in unfamiliar areas that are rated by other users
+3. Create groups or events for any user needs
+
+## Component Tree Hierarchy
+
+
+
+
+## Setup/Installation Requirements
+
+1. Clone this repository:
+    ```
+    $ git clone https://github.com/erik-t-irgens/RunningApp-React
+    ```
+2. Install the dependencies
+    ```
+    $ npm install
+    ```
+3. Run the application in the root directory
+    ```
+    $ yarn start
+    ```
+4. If ```$ yarn start``` doesn't automatically direct you to your default browser, visit the MVC localhost:3000/
+    ```
+    localhost:3000/
+    ```
+## Technologies Used
+* JavaScript, CSS, HTML, React, Node, yarn
+
 
 ## Available Scripts
 
@@ -37,32 +75,14 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Support and contact details
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+_Please contact Erik Irgens with questions and comments._
 
-### Code Splitting
+### License
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+*GNU GPLv3*
 
-### Analyzing the Bundle Size
+Copyright (c) 2019 **_Erik Irgens_**
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
