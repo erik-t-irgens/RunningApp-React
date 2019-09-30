@@ -1,8 +1,10 @@
+import React from 'react';
+
 const Card = (props) => {
     return (
-        <div>
+        <div className="displayCard">
             <div>
-                {props.image}
+                {props.visibleElement}
             </div>
             <h3>
                 {props.name}

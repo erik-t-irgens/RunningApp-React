@@ -1,7 +1,8 @@
 import React from 'react';
+import Gallery from "./Gallery";
 
 export default function (props) {
     return (
-        <p>HOME PAGE</p>
+        <Gallery></Gallery>
     )
 }

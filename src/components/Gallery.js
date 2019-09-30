@@ -1,7 +1,13 @@
 import React from 'react';
 
+
 export default function (props) {
     return (
-        <p>{props.items}</p>
-    )
+
+        <div>
+            {props.masterEnumerable.map((item, id) =>
+                <Card visibleElement={item.image} name={item.name}></Card>
+            )}
+        </div>
+    );
 }
