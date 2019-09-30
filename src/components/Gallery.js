@@ -1,12 +1,13 @@
 import React from 'react';
+import Card from "./Card.js";
 
 
 export default function (props) {
     return (
 
         <div>
-            {props.masterEnumerable.map((item, id) =>
-                <Card visibleElement={item.image} name={item.name}></Card>
+            {props.items.map((items, id) =>
+                <Card visibleElement={items.image} name={items.name}></Card>
             )}
         </div>
     );

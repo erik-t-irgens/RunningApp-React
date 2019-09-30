@@ -1,5 +1,6 @@
 import CTAButton from "./CTAButton.js";
 import React from 'react';
+import Input from "./Input.js";
 
 export default function (props) {
     return (

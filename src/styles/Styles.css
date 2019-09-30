@@ -1,0 +1,135 @@
+
+/* _____________________________________________________ */
+/* COLOR STYLE INDEX */
+/* 
+Main color scheme: 
+Primary: Some sort of gray, maybe hints of a cool tone
+Secondary: Some sort of purple/dark blue/saturated cool tone
+tertiary: Some sort of bright/neon/saturated green or yellow tone. COmplimentary
+quaternary: Maybe an orange? Other brighter neon color
+quinary: a lighter gray for borders or boundaries
+senary: Edit button might be a bright neon blue
+septinary: Save - neon green?
+octonary: Discard - neon red?
+
+Primary text color: Off white, perhaps stark white. Bold
+Secondary text color: Maybe off white, or gray, less frontal
+
+
+*/
+
+.primaryColor, .secondaryColor, .tertiaryColor, .quaternaryColor, .quinaryColor, .senaryColor, .septinaryColor, .octonaryColor{
+  height: 250px;
+  width: 250px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.primaryColor{
+  background-color: #19242b;
+}
+
+.secondaryColor{
+ background-color: #340087;
+}
+
+.tertiaryColor{
+ background-color: #bfff00;
+}
+
+.quaternaryColor{
+ background-color: #ff8c00;
+}
+
+.quinaryColor{
+ background-color: #878787;
+}
+
+.senaryColor{
+ background-color: #00ffee;
+}
+
+.septinaryColor{
+ background-color: #00ff59;
+}
+
+.octonaryColor{
+ background-color: #ff5100;
+}
+
+
+/* _____________________________________________________ */
+/* Generic app level */
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.InlineBlock {
+  display: inline-block;
+}
+
+/* _____________________________________________________ */
+/* Navigational styles -- NavBar, NavButton, Drawer */
+
+.NavBar{
+  width: 100%;
+}
+
+.NavButton{
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  top: 0;
+  z-index: 0;
+}
+
+.Avatar{
+  display: inline-block;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  margin-left: 0%;
+  margin-right: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+#Header{
+  display: inline-block;
+  width: 100vw;
+}
+
+
+/* _____________________________________________________ */
+/* Button style - CTAButtons, specialized NavButtons */
+
+.CTAButton{
+  width: 200px;
+  height: 35px;
+  background-color: black;
+  color: white;
+}
+.CTAButton:Hover{
+  width: 210px;
+}
