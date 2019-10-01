@@ -63,6 +63,8 @@ Secondary text color: Maybe off white, or gray, less frontal
 
 .App {
   text-align: center;
+  background-color: #19242b;
+  color: white;
 }
 
 .App-logo {
@@ -97,6 +99,8 @@ Secondary text color: Maybe off white, or gray, less frontal
 
 .NavButton{
   display: inline-block;
+  width: 100%;
+  height: 30px;
   border-radius: 50%;
   position: relative;
   top: 0;
