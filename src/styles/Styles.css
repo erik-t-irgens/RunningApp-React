@@ -95,6 +95,10 @@ Secondary text color: Maybe off white, or gray, less frontal
 
 .NavBar{
   width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+
 }
 
 .NavButton{
@@ -122,6 +126,8 @@ Secondary text color: Maybe off white, or gray, less frontal
 #Header{
   display: inline-block;
   width: 100vw;
+  background-color: #151d22;
+  height: 100px;
 }
 
 

@@ -16,26 +16,24 @@ import Header from "./Header.js"
 import Row from "./Row.js";
 import Grid from "./Grid.js";
 
-
-
 function App() {
 
   // var tracks = [1, 2, 3, 4];
   //Calling useState returns two things :1) the current value of that state 2) a function you can call to then set that state.
 
   const [tracks, setTracks] = useState([
-    { name: "track1" }, { name: "track2" }
+    { Title: "track1", Description: "Description lore ipsum", Waypoints: "192301972301273908172398172308123", Location: "120937109283", imagedisplay: "https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/6/2017/01/04143600/Access-Map-screenshot1.jpg" }, { Title: "track2", Description: "Description 123123ALKJDhkJSAEBDFklhjSBlkjhbSLKg", Waypoints: "19dfsdfsdfsdfsdf", Location: "213123123123123123123", imagedisplay: "https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/6/2017/01/04143600/Access-Map-screenshot1.jpg" }
   ]
 
   );
 
   const [events, setEvents] = useState([
-    { name: "event1" }, { name: "event2" }
+    { Title: "event1" }, { Title: "event2" }
   ]
   );
 
   const [users, setUsers] = useState([
-    { name: "user1" }, { name: "user2" }
+    { Title: "user1" }, { Title: "user2" }
   ]
   );
 
