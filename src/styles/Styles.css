@@ -65,6 +65,8 @@ Secondary text color: Maybe off white, or gray, less frontal
   text-align: center;
   background-color: #19242b;
   color: white;
+  height: 100vh;
+  width: 100vw;
 }
 
 .App-logo {

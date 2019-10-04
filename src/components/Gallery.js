@@ -13,7 +13,8 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles(theme => ({
     card: {
         maxWidth: 345,
-        width: 345,
+        // maxHeight: 350,
+        width: '75%',
         height: 350,
         display: "inline-block",
         marginLeft: 30,
