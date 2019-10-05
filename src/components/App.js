@@ -15,6 +15,7 @@ import Home from './Home';
 import Header from "./Header.js"
 import Grid from "./Grid.js";
 
+
 function App() {
 
   // var tracks = [1, 2, 3, 4];
@@ -41,8 +42,9 @@ function App() {
 
   return (
     <div className="App">
-      <Header></Header>
+
       <Router>
+        <Header></Header>
         <Route exact path="/" ></Route>
         <Route exact path="/register" component={Register} />
         <Route exact path="/login" component={Login} />

@@ -21,6 +21,7 @@ import ErrorOutlineIcon from '@material-ui/icons/ErrorOutline';
 import LockOpenIcon from '@material-ui/icons/LockOpen';
 import Button from '@material-ui/core/Button';
 import { hidden } from 'ansi-colors';
+import { Link } from 'react-router-dom';
 
 
 const useStyles = makeStyles(theme => ({
@@ -37,6 +38,7 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: "#19242b",
         height: '100%',
         overflow: 'hidden',
+
     },
     fullList: {
         width: 'auto',
@@ -53,6 +55,13 @@ const useStyles = makeStyles(theme => ({
         margin: theme.spacing(2),
 
 
+    },
+    paragraph: {
+        color: "#878787",
+        position: 'sticky',
+        top: '100%',
+        bottom: 0,
+        marginLeft: '25%',
     },
     input: {
         display: 'none',
@@ -132,6 +141,7 @@ const NavBar = (props) => {
                     </Button>
                 </ListItem>
             </List>
+            <p className={classes.paragraph}>&#169; RalliRun - 2019</p>
         </div>
     );
 
@@ -143,20 +153,23 @@ const NavBar = (props) => {
             <IconButton onClick={toggleDrawer('left', true)} className={classes.button, classes.hamburger} aria-label="add to shopping cart">
                 <MenuIcon className={classes.buttonicons} />
             </IconButton>
-            <IconButton
-                className={classes.button, classes.pair}
-                aria-label="Find"
-                component="span"
-            >
-                <EmojiPeople className={classes.buttonicons} />
-            </IconButton>
-            <IconButton className={classes.button, classes.track} aria-label="Tracks">
-                <Map className={classes.buttonicons} />
-            </IconButton>
-
-            <IconButton className={classes.button, classes.event} aria-label="Browse events">
-                <EventIcon className={classes.buttonicons} />
-            </IconButton>
+            <Link to="/app/user" replace>
+                <IconButton
+                    className={classes.button, classes.pair}
+                    aria-label="users">
+                    <EmojiPeople className={classes.buttonicons} />
+                </IconButton>
+            </Link>
+            <Link to="/app/track" replace>
+                <IconButton className={classes.button, classes.track} aria-label="Tracks">
+                    <Map className={classes.buttonicons} />
+                </IconButton>
+            </Link>
+            <Link to="/app/event" replace>
+                <IconButton className={classes.button, classes.event} aria-label="Browse events">
+                    <EventIcon className={classes.buttonicons} />
+                </IconButton>
+            </Link>
             <Drawer open={state.left} onClose={toggleDrawer('left', false)}>
                 {sideList('left')}
             </Drawer>
