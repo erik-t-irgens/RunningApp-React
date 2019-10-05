@@ -20,7 +20,11 @@ const useStyles = makeStyles(theme => ({
         marginLeft: 30,
         marginTop: 30,
         backgroundColor: "#151d22",
-        color: "white"
+        color: "white",
+        '&:hover': {
+            transform: "translateY(5px)",
+        },
+
     },
     media: {
         height: 0,

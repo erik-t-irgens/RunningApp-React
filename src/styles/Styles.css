@@ -65,8 +65,10 @@ Secondary text color: Maybe off white, or gray, less frontal
   text-align: center;
   background-color: #19242b;
   color: white;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   width: 100vw;
+  font-family: 'Roboto', sans-serif;
 }
 
 .App-logo {
@@ -97,9 +99,10 @@ Secondary text color: Maybe off white, or gray, less frontal
 
 .NavBar{
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 2;
+  font-family: 'Roboto', sans-serif;
 
 }
 
@@ -122,14 +125,19 @@ Secondary text color: Maybe off white, or gray, less frontal
   margin-left: 0%;
   margin-right: 100%;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 #Header{
+  position: sticky;
+  top: 0;
   display: inline-block;
   width: 100vw;
   background-color: #151d22;
   height: 100px;
+   z-index: 2;
+   opacity: .95;
+   box-shadow: 2px 2px 5 black;
 }
 
 
