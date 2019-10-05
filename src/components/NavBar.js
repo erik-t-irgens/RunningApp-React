@@ -16,7 +16,11 @@ import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import Settings from '@material-ui/icons/Settings';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
-import Fab from '@material-ui/core/Fab';
+import HelpOutline from '@material-ui/icons/HelpOutline';
+import ErrorOutlineIcon from '@material-ui/icons/ErrorOutline';
+import LockOpenIcon from '@material-ui/icons/LockOpen';
+import Button from '@material-ui/core/Button';
+import { hidden } from 'ansi-colors';
 
 
 const useStyles = makeStyles(theme => ({
@@ -30,6 +34,9 @@ const useStyles = makeStyles(theme => ({
     },
     list: {
         width: 250,
+        backgroundColor: "#19242b",
+        height: '100%',
+        overflow: 'hidden',
     },
     fullList: {
         width: 'auto',
@@ -40,9 +47,11 @@ const useStyles = makeStyles(theme => ({
     Fab: {
         margin: theme.spacing(1),
         width: "100%",
+        color: 'white',
     },
     button: {
-        margin: theme.spacing(1),
+        margin: theme.spacing(2),
+
 
     },
     input: {
@@ -95,32 +104,32 @@ const NavBar = (props) => {
         >
             <List>
                 <ListItem className={classes.ListItem} >
-                    <Fab size="large" variant="contained" className={classes.Fab, classes.privacybutton}>
-                        Privacy
-                    </Fab>
-                </ListItem>
-                <ListItem className={classes.ListItem} >
-                    <Fab size="large" variant="contained" className={classes.Fab, classes.accountbutton}>
+                    <Button variant="outlined" color="primary" className={classes.button, classes.Fab, classes.accountbutton}>
                         <Settings className={classes.extendedIcon} /> Account
-                    </Fab>
+                    </Button>
                 </ListItem>
                 <ListItem className={classes.ListItem} >
-                    <Fab size="large" variant="contained" className={classes.Fab, classes.aboutbutton}>
-                        About
-                    </Fab>
+                    <Button variant="outlined" color="primary" className={classes.button, classes.Fab, classes.aboutbutton}>
+                        <HelpOutline className={classes.extendedIcon} /> About
+                    </Button>
                 </ListItem>
                 <ListItem className={classes.ListItem} >
-                    <Fab size="large" variant="contained" className={classes.Fab, classes.helpbutton}>
-                        Help
-                    </Fab>
+                    <Button variant="outlined" color="primary" className={classes.button, classes.Fab, classes.helpbutton}>
+                        <ErrorOutlineIcon className={classes.extendedIcon} /> Help
+                    </Button>
                 </ListItem>
             </List>
             <Divider />
             <List>
                 <ListItem className={classes.ListItem} >
-                    <Fab size="large" variant="contained" className={classes.Fab, classes.logoutbutton}>
+                    <Button variant="outlined" color="primary" className={classes.button, classes.Fab, classes.logoutbutton}>
                         <ExitToAppIcon className={classes.extendedIcon} />Log Out
-                    </Fab>
+                    </Button>
+                </ListItem>
+                <ListItem className={classes.ListItem} >
+                    <Button variant="outlined" color="primary" className={classes.button, classes.Fab, classes.privacybutton}>
+                        <LockOpenIcon className={classes.extendedIcon} />  Privacy
+                    </Button>
                 </ListItem>
             </List>
         </div>
@@ -129,21 +138,19 @@ const NavBar = (props) => {
     return (
         <div className="NavBar">
             <Grid container>
-
                 <Avatar alt="Remy Sharp" src={props.children} className={classes.bigAvatar} />
-
             </Grid>
             <IconButton onClick={toggleDrawer('left', true)} className={classes.button, classes.hamburger} aria-label="add to shopping cart">
                 <MenuIcon className={classes.buttonicons} />
             </IconButton>
             <IconButton
                 className={classes.button, classes.pair}
-                aria-label="upload picture"
+                aria-label="Find"
                 component="span"
             >
                 <EmojiPeople className={classes.buttonicons} />
             </IconButton>
-            <IconButton className={classes.button, classes.track} aria-label="delete">
+            <IconButton className={classes.button, classes.track} aria-label="Tracks">
                 <Map className={classes.buttonicons} />
             </IconButton>
 
