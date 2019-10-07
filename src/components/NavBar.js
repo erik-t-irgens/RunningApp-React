@@ -53,8 +53,6 @@ const useStyles = makeStyles(theme => ({
     },
     button: {
         margin: theme.spacing(2),
-
-
     },
     paragraph: {
         color: "#878787",
