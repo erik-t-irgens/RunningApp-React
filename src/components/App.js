@@ -13,7 +13,7 @@ import EventCreate from './Event/Create';
 import Gallery from './Gallery'
 import Home from './Home';
 import Header from "./Header.js"
-import Grid from "./Grid.js";
+
 
 
 function App() {
@@ -44,7 +44,7 @@ function App() {
     <div className="App">
 
       <Router>
-        <Header></Header>
+        <Header>E</Header>
         <Route exact path="/" ></Route>
         <Route exact path="/register" component={Register} />
         <Route exact path="/login" component={Login} />
@@ -52,20 +52,16 @@ function App() {
 
 
         {/* <Route exact path="/app/user" render={() => <Gallery items={users} />} /> */}
-        <Route exact path="/app/user" render={() =>
-          <Grid>
-            <Gallery items={users}>
-            </Gallery>
-          </Grid>}>
+        <Route exact path="/app/user" render={() => <Gallery items={users}>PEOPLE</Gallery>
+        }>
         </Route>
-        <Route exact path="/app/user/:id" component={UserDetails} />
-        <Route exact path="/app/user/settings" component={UserSettings} />
-
-        <Route exact path="/app/track" render={() => <Gallery items={tracks} />} />
-        <Route exact path="/app/track/:id" component={TrackDetails} />
+        <Route exact path="/app/user/settings" render={() => <UserSettings />} />
+        <Route exact path="/app/user/:id" render={() => <UserDetails></UserDetails>} />
+        <Route exact path="/app/track" render={() => <Gallery items={tracks}>TRACKS</Gallery>} />
+        <Route exact path="/app/track/:id" render={() => <TrackDetails />} />
         <Route exact path="/app/track/create" component={TrackCreate} />
 
-        <Route exact path="/app/event" render={() => <Gallery items={events} />} />
+        <Route exact path="/app/event" render={() => <Gallery items={events}>EVENTS</Gallery>} />
         <Route exact path="/app/event/:id" component={EventDetails} />
         <Route exact path="/app/event/create" component={EventCreate} />
         <Route exact path="/app/home" render={() => <Home tracks={tracks} users={users} events={events} />}>

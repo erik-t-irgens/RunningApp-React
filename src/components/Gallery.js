@@ -1,13 +1,10 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import clsx from 'clsx';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
-import CardActions from '@material-ui/core/CardActions';
 import Avatar from '@material-ui/core/Avatar';
-import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles(theme => ({
@@ -24,7 +21,9 @@ const useStyles = makeStyles(theme => ({
         '&:hover': {
             transform: "translateY(5px)",
         },
-
+    },
+    avatar: {
+        backgroundColor: "#340087",
     },
     media: {
         height: 0,
@@ -38,12 +37,13 @@ export default function (props) {
     return (
 
         <div>
+            <h1>{props.children}</h1>
             {props.items.map((items, id) =>
                 <Card className={classes.card}>
                     <CardHeader
                         avatar={
                             <Avatar aria-label={items.value} className={classes.avatar}>
-                                image={items.imagedisplay}
+
                             </Avatar>
                         }
                         title={items.Title}

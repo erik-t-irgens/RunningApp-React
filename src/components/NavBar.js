@@ -4,7 +4,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import IconButton from '@material-ui/core/IconButton';
 import EventIcon from '@material-ui/icons/Event';
 import MenuIcon from '@material-ui/icons/Menu';
-import EmojiPeople from '@material-ui/icons/EmojiPeopleOutlined';
+import DirectionsRunIcon from '@material-ui/icons/DirectionsRun';
+import PersonIcon from '@material-ui/icons/Person';
 import Map from '@material-ui/icons/MapOutlined';
 import Grid from '@material-ui/core/Grid';
 // Avatar
@@ -29,7 +30,7 @@ const useStyles = makeStyles(theme => ({
         margin: 10,
         width: 120,
         height: 120,
-        position: "absolute",
+        position: 'relative',
         // zIndex: 0,
         backgroundColor: "#340087",
     },
@@ -38,7 +39,6 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: "#19242b",
         height: '100%',
         overflow: 'hidden',
-
     },
     fullList: {
         width: 'auto',
@@ -71,6 +71,9 @@ const useStyles = makeStyles(theme => ({
     },
     hamburger: {
         color: "#878787"
+    },
+    you: {
+        color: "#bfff00"
     },
     pair: {
         color: "#bfff00"
@@ -112,6 +115,10 @@ const NavBar = (props) => {
             onKeyDown={toggleDrawer(side, false)}
         >
             <List>
+                <Grid container>
+                    <Avatar src='https://picsum.photos/200/200/?blur=5' className={classes.bigAvatar}>{props.children}</Avatar>
+                </Grid>
+                <Divider />
                 <ListItem className={classes.ListItem} >
                     <Button variant="outlined" color="primary" className={classes.button, classes.Fab, classes.accountbutton}>
                         <Settings className={classes.extendedIcon} /> Account
@@ -147,19 +154,25 @@ const NavBar = (props) => {
 
     return (
         <div className="NavBar">
-            <Grid container>
-                <Avatar alt="Remy Sharp" src={props.children} className={classes.bigAvatar} />
-            </Grid>
+
             <IconButton onClick={toggleDrawer('left', true)} className={classes.button, classes.hamburger} aria-label="add to shopping cart">
                 <MenuIcon className={classes.buttonicons} />
             </IconButton>
+            <Link to="/app/user/settings" replace>
+                <IconButton
+                    className={classes.button, classes.you}
+                    aria-label="you">
+                    <PersonIcon className={classes.buttonicons} />
+                </IconButton>
+            </Link>
             <Link to="/app/user" replace>
                 <IconButton
                     className={classes.button, classes.pair}
                     aria-label="users">
-                    <EmojiPeople className={classes.buttonicons} />
+                    <DirectionsRunIcon className={classes.buttonicons} />
                 </IconButton>
             </Link>
+
             <Link to="/app/track" replace>
                 <IconButton className={classes.button, classes.track} aria-label="Tracks">
                     <Map className={classes.buttonicons} />
