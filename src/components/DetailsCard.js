@@ -30,12 +30,11 @@ export default function (props) {
         <div>
             <Card className={classes.card}>
                 <CardContent>
-                    <Typography variant="body2" color="white" component="p">
+                    <Typography variant="body2" color="white" >
                         {props.children}
                     </Typography>
                 </CardContent>
             </Card>
-            )}
         </div>
     );
 }

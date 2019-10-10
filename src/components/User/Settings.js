@@ -112,13 +112,13 @@ export default function UserSettings() {
                             shrink: true,
                         }}
                     />
-                    <Button variant="outlined" color="primary" className={classes.button, classes.Fab} >
+                    <Button variant="outlined" color="primary" className={classes.button} >
                         Save
                     </Button>
                 </form>
-                <Button variant="outlined" color="primary" className={classes.button, classes.Fab} >
+                <Button variant="outlined" color="primary" className={classes.button} >
                     Back
-                    </Button>
+                </Button>
             </DetailsCard>
         </div>
     )
